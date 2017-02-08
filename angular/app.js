@@ -10,7 +10,7 @@ mainApp.controller('mainController', ['$scope', function($scope) {
     };
 
     $scope.reset = function() {
-        $scope.spice = 'world';
+        $scope.name = 'world';
     };
 }]);
 })(window.angular);
