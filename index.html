@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-
 <head>
+  	<title>My first website with angular</title>
 	<link type="text/css" rel="stylesheet" href="css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  	<script src="app.js"></script>
 </head>
 
-<body>
+<body ng-app="mainApp">
 
-<div ng-app="">
+<div ng-controller="mainController">
   <p>Name : <input type="text" ng-model="name"></p>
   <h1>Hello {{name}}</h1>
 </div>
