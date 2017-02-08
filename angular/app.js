@@ -5,12 +5,12 @@ var mainApp = angular.module('mainApp', []);
 mainApp.controller('mainController', ['$scope', function($scope) {
     $scope.name = 'world';
 
-    $scope.chiliSpicy = function() {
-        $scope.spice = 'chili';
+    $scope.setName = function() {
+        $scope.name = 'set';
     };
 
-    $scope.jalapenoSpicy = function() {
-        $scope.spice = 'jalapeño';
+    $scope.reset = function() {
+        $scope.spice = 'world';
     };
 }]);
 })(window.angular);
