@@ -12,7 +12,7 @@
                 controller: 'homeController as homeCtrl',
             })
             .otherwise({
-                redirectTo: '/'
+                templateUrl: 'angular/home/404.view.html',
             });
     }
 })();

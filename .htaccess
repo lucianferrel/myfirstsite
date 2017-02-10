@@ -1,0 +1,4 @@
+AuthName "www"
+AuthUserFile .htpasswd
+AuthType Basic
+require valid-user 
