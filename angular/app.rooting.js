@@ -8,7 +8,6 @@
     function config(($routeProvider) {
         $routeProvider
             .when('/', {
-                title: 'Main',
                 templateUrl: 'angular/home/home.view.html',
                 controller: 'homeController as homeCtrl',
             })
