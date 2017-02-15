@@ -21,7 +21,7 @@
             vm.newRevenu = vm.revenu;
             for (var i = 0; i < Number(vm.period); i++) {
                 vm.newCapital = (Number(vm.newCapital))*(1+Number(vm.interest)*0.01) + Number(vm.newRevenu);
-                vm.newRevenu = vm.revenu + vm.reval;
+                vm.newRevenu = Number(vm.revenu) + Number(vm.reval);
             }
         };
 
@@ -31,6 +31,7 @@
             vm.interest = '3';
             vm.period = '0';
             vm.newCapital = '70000';
+            vm.newRevenu = '13000';
         };
 
     }
