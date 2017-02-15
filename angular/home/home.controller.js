@@ -15,7 +15,7 @@
         vm.newCapital = '70000';
 
         vm.evaluate = function() {
-            for (i = 0; i < vm.period; i++) {
+            for (var i = 0; i < vm.period; i++) {
                 vm.newCapital = (vm.newCapital + vm.revenu)*(1+vm.interest*0.01);
             }
         };
