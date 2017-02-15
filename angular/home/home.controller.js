@@ -17,7 +17,7 @@
         vm.evaluate = function() {
             vm.newCapital = vm.capital;
             for (var i = 0; i < Number(vm.period); i++) {
-                vm.newCapital = (Number(vm.newCapital) + Number(vm.revenu))*(1+Number(vm.interest)*0.01);
+                vm.newCapital = (Number(vm.newCapital))*(1+Number(vm.interest)*0.01) + Number(vm.revenu);
             }
         };
 
