@@ -5,7 +5,7 @@ Bienvenue sur le premier site angular de lucian ferrel.
     <p>Revenu : <input type="text" ng-model="homeCtrl.revenu"> euros/ans</p>
     <p>Intérêt : <input type="text" ng-model="homeCtrl.interest"> %/ans</p>
     <p>Période : <input type="text" ng-model="homeCtrl.period"> ans</p>
-    <h1>Capital après {{homeCtrl.period}} ans : {{homeCtrl.newCapital}} euros</h1>
+    <h1>Capital après {{homeCtrl.period}} ans : {{homeCtrl.newCapital|number:2}} euros</h1>
     <button ng-click="homeCtrl.evaluate()" class="btn btn-primary">Calculer</button>
     <button ng-click="homeCtrl.reset()" class="btn btn-danger">Reset</button>
 </div>
