@@ -3,6 +3,7 @@ Bienvenue sur le premier site angular de lucian ferrel.
 <div>
     <p>Capital : <input type="text" ng-model="homeCtrl.capital"> euros</p>
     <p>Revenu : <input type="text" ng-model="homeCtrl.revenu"> euros/ans</p>
+    <p>Revalorisation revenu : <input type="text" ng-model="homeCtrl.reval"> euros/ans</p>
     <p>Intérêt : <input type="text" ng-model="homeCtrl.interest"> %/ans</p>
     <p>Période : <input type="text" ng-model="homeCtrl.period"> ans</p>
     <h1>Capital après {{homeCtrl.period}} ans : {{homeCtrl.newCapital|number:2}} euros</h1>
