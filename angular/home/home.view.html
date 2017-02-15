@@ -1,8 +1,10 @@
 Bienvenue sur le premier site angular de lucian ferrel.
 
 <div>
-    <p>Name : <input type="text" ng-model="homeCtrl.name"></p>
-    <h1>Hello {{homeCtrl.name}}</h1>
-    <button ng-click="homeCtrl.setName()" class="btn btn-primary">set name</button>
-    <button ng-click="homeCtrl.reset()" class="btn btn-danger">reset</button>
+    <p>Capital : <input type="text" ng-model="homeCtrl.capital"> euros</p>
+    <p>Intérêt : <input type="text" ng-model="homeCtrl.interest"> %/ans</p>
+    <p>Période : <input type="text" ng-model="homeCtrl.period"> ans</p>
+    <h1>Capital après {{homeCtrl.period}} ans : {{homeCtrl.newCapital}} euros</h1>
+    <button ng-click="homeCtrl.evaluate()" class="btn btn-primary">Calculer</button>
+    <button ng-click="homeCtrl.reset()" class="btn btn-danger">Reset</button>
 </div>

@@ -8,14 +8,20 @@
     function homeController() {
 
         var vm = this;
-        vm.name = 'world';
+        vm.capital = '70000';
+        vm.interest = '3';
+        vm.period = '0';
+        vm.newCapital = '70000';
 
-        vm.setName = function() {
-            vm.name = 'set';
+        vm.evaluate = function() {
+            vm.newCapital = '100000';
         };
 
         vm.reset = function() {
-            vm.name = 'world';
+            vm.capital = '70000';
+            vm.interest = '3';
+            vm.period = '0';
+            vm.newCapital = '70000';
         };
 
     }
